@@ -1,0 +1,62 @@
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+.venv_torch_test/
+venv/
+env/
+
+# Python environment files
+.env
+.env.*
+!.env.example
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Training outputs and experiment runs
+runs/
+wandb/
+mlruns/
+
+# Dataset files
+datasets/
+
+# Temporary and log files
+*.log
+*.tmp
+
+# Test and coverage cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Build files
+build/
+dist/
+*.egg-info/
+
+# Generated reports and temporary exports
+reports/
+# Full environment snapshot
+requirements-full.txt
+
+# Training resume backups
+models/*resume*backup*.pt
+
+# Generated results and training artifacts
+results/
+training/
