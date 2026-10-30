@@ -44,7 +44,7 @@ The Driver Safety System combines facial landmark monitoring and YOLO-based obje
 
 
 
-\## Object Detection Classes
+## Object Detection Classes
 
 
 
@@ -328,7 +328,7 @@ Webcam and speaker tests require compatible local hardware.
 
 
 
-The custom object detection model was trained using the \*\*lost-and-found Dataset\*\*, obtained from Roboflow Universe.
+The custom object detection model was trained using the **lost-and-found Dataset**, obtained from Roboflow Universe.
 
 
 
