@@ -1,4 +1,4 @@
-\# Driver Safety System
+# Driver Safety System
 
 
 
@@ -14,41 +14,49 @@ The Driver Safety System combines facial landmark monitoring and YOLO-based obje
 
 
 
-\*\*This is an academic prototype, not a certified vehicle safety system. It must not be relied upon for real-world driving decisions.\*\*
+**This is an academic prototype, not a certified vehicle safety system. It must not be relied upon for real-world driving decisions.**
 
 
 
-\## Features
+## Features
 
 
 
-\- Real-time webcam monitoring.
+- Real-time webcam monitoring.
 
-\- Face and eye landmark detection using MediaPipe.
+- Face and eye landmark detection using MediaPipe.
 
-\- Drowsiness warning based on prolonged eye closure.
+- Drowsiness warning based on prolonged eye closure.
 
-\- General object detection using YOLO11n.
+- General object detection using YOLO11n.
 
-\- Custom object detection using a trained YOLO11n model.
+- Custom object detection using a trained YOLO11n model.
 
-\- Color-coded object bounding boxes and labels.
+- Color-coded object bounding boxes and labels.
 
-\- Duplicate phone detection suppression.
+- Duplicate phone detection suppression.
 
-\- Audible warning alerts.
+- Audible warning alerts.
 
-\- FPS display for performance monitoring.
+- FPS display for performance monitoring.
 
-\- CPU-based inference support.
-
-
-
-\## Object Detection Classes
+- CPU-based inference support.
 
 
+## Application Screenshots
 
-\### General Object Detection
+### Object Detection
+![Object Detection](screenshots/object-detection.png)
+
+### Drowsiness Monitoring
+![Drowsiness Monitoring](screenshots/drowsiness-monitoring.png)
+
+
+## Object Detection Classes
+
+
+
+### General Object Detection
 
 
 
@@ -56,7 +64,7 @@ Uses the COCO-trained YOLO model.
 
 
 
-\### Custom Object Detection
+### Custom Object Detection
 
 
 
@@ -64,51 +72,51 @@ The custom model detects these 10 classes:
 
 
 
-1\. Card
+1. Card
 
-2\. Charger
+2. Charger
 
-3\. Earphones
+3. Earphones
 
-4\. Glasses
+4. Glasses
 
-5\. Keys
+5. Keys
 
-6\. Pen
+6. Pen
 
-7\. Phone
+7. Phone
 
-8\. Sunglasses
+8. Sunglasses
 
-9\. Wallet
+9. Wallet
 
-10\. Watch
-
-
-
-\## Technology Stack
+10. Watch
 
 
 
-\- Python
-
-\- OpenCV
-
-\- MediaPipe
-
-\- PyTorch
-
-\- Torchvision
-
-\- Ultralytics YOLO
-
-\- NumPy
-
-\- OpenCV-based webcam interface
+## Technology Stack
 
 
 
-\## Project Structure
+- Python
+
+- OpenCV
+
+- MediaPipe
+
+- PyTorch
+
+- Torchvision
+
+- Ultralytics YOLO
+
+- NumPy
+
+- OpenCV-based webcam interface
+
+
+
+## Project Structure
 
 
 
@@ -148,25 +156,25 @@ Dataset files, training runs, temporary outputs, and environment-specific files 
 
 
 
-\## Requirements
+## Requirements
 
 
 
-\- Windows 10 or Windows 11
+- Windows 10 or Windows 11
 
-\- Python 3.11
+- Python 3.11
 
-\- Webcam
+- Webcam
 
-\- Speaker or headphones for audible alerts
+- Speaker or headphones for audible alerts
 
-\- Recommended: 16 GB RAM
+- Recommended: 16 GB RAM
 
-\- CPU execution supported; a dedicated GPU is not required.
+- CPU execution supported; a dedicated GPU is not required.
 
 
 
-\## Installation
+## Installation
 
 
 
@@ -226,7 +234,7 @@ Ensure the required model files are placed inside the `models/` directory.
 
 
 
-\## Running the Application
+## Running the Application
 
 
 
@@ -242,11 +250,11 @@ python -m src.app
 
 
 
-Press \*\*Q\*\* to quit the application.
+Press **Q** to quit the application.
 
 
 
-\## Model Evaluation
+## Model Evaluation
 
 
 
@@ -278,23 +286,23 @@ The custom model was trained for 30 epochs at an image size of 416 using a CPU-b
 
 
 
-\### Known Limitations
+### Known Limitations
 
 
 
-\- Detection performance varies across object classes.
+- Detection performance varies across object classes.
 
-\- Keys and pens have comparatively lower detection performance.
+- Keys and pens have comparatively lower detection performance.
 
-\- Webcam lighting, camera quality, object position, and occlusion can affect results.
+- Webcam lighting, camera quality, object position, and occlusion can affect results.
 
-\- CPU inference performance depends on the computer's hardware.
+- CPU inference performance depends on the computer's hardware.
 
-\- Drowsiness detection is a prototype and is not a substitute for a certified driver-monitoring system.
+- Drowsiness detection is a prototype and is not a substitute for a certified driver-monitoring system.
 
 
 
-\## Testing
+## Testing
 
 
 
@@ -302,21 +310,21 @@ The project was manually tested for:
 
 
 
-\- Application startup and webcam access.
+- Application startup and webcam access.
 
-\- Face and eye landmark detection.
+- Face and eye landmark detection.
 
-\- Eye closure and drowsiness warning behavior.
+- Eye closure and drowsiness warning behavior.
 
-\- Audible warning and reset behavior.
+- Audible warning and reset behavior.
 
-\- General object detection.
+- General object detection.
 
-\- Custom object detection.
+- Custom object detection.
 
-\- Duplicate phone detection suppression.
+- Duplicate phone detection suppression.
 
-\- Application stability during a five-minute integration test.
+- Application stability during a five-minute integration test.
 
 
 
@@ -324,7 +332,7 @@ Webcam and speaker tests require compatible local hardware.
 
 
 
-\## Dataset and Attribution
+## Dataset and Attribution
 
 
 
@@ -332,31 +340,31 @@ The custom object detection model was trained using the \*\*lost-and-found Datas
 
 
 
-\- \*\*Dataset:\*\* lost-and-found
+- **Dataset:** lost-and-found
 
-\- \*\*Creator:\*\* New Workspace
+- **Creator:** New Workspace
 
-\- \*\*Platform:\*\* Roboflow Universe
+- **Platform:** Roboflow Universe
 
-\- \*\*Year:\*\* 2026
+- **Year:** 2026
 
-\- \*\*License:\*\* CC BY 4.0
+- **License:** CC BY 4.0
 
-\- \*\*Source:\*\* https://universe.roboflow.com/dj-ct2wf/lost-and-found-9oqhn-ddqnl
+- **Source:** https://universe.roboflow.com/dj-ct2wf/lost-and-found-9oqhn-ddqnl
 
 
 
-\### Modifications
+### Modifications
 
 
 
 The original dataset was prepared for object detection by:
 
-\- Converting polygon annotations into enclosing bounding boxes.
+- Converting polygon annotations into enclosing bounding boxes.
 
-\- Repairing detection annotations where required.
+- Repairing detection annotations where required.
 
-\- Organizing the dataset into training, validation, and test splits.
+- Organizing the dataset into training, validation, and test splits.
 
 
 
@@ -368,7 +376,7 @@ License information: https://creativecommons.org/licenses/by/4.0/
 
 
 
-\## Disclaimer
+## Disclaimer
 
 
 
@@ -376,7 +384,7 @@ This project is developed for educational and demonstration purposes only. It is
 
 
 
-\## License
+## License
 
 
 
