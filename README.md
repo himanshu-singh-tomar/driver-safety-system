@@ -43,16 +43,8 @@ The Driver Safety System combines facial landmark monitoring and YOLO-based obje
 - CPU-based inference support.
 
 
-## Application Screenshots
 
-### Object Detection
-![Object Detection](screenshots/object-detection.png)
-
-### Drowsiness Monitoring
-![Drowsiness Monitoring](screenshots/drowsiness-monitoring.png)
-
-
-## Object Detection Classes
+\## Object Detection Classes
 
 
 
